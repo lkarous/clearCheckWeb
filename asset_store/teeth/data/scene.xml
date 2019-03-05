@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Assets>
+  <Asset>
+    <eRect anchor="top_left" name="rect_bg" scale="1.77778 0.5625 0.0 4"/>
+    <Scene clear_depth="1.0" name="scene1">
+      <Camera name="persp1" width="1" height="1" position="3.00197 2.84194 6.38957" lookat="2.58244 2.72114 5.4899" up="-0.0510529 0.992677 -0.109483" fovy="37.8493" auto_screen_size="false"/>
+      <RenderTarget width="1" height="1" >
+        <Viewport name="main_viewport" camera="persp1" background_color="0 0 0 0" left="0" top="0" width="1" height="1" />
+      </RenderTarget>
+      <AmbientLight value="0.3 0.3 0.3"/>
+
+    <!-- 前方 -->
+      <GameObject name="cont_directionalLight1">
+           <Light name="directionalLight1" type="directional_light" 
+           position="0 10.0 10.57644" 
+           direction="0 0.0 -1" 
+        diffuse="0.8 0.8 0.8" 
+        specular="0.9 0.9 0.9 1"/>
+      </GameObject>
+        <!-- 左前方 -->
+       <GameObject name="cont_directionalLight2">
+        <Light name="directionalLight2" type="directional_light" position="-2.10956 0 7.57644" 
+        direction="0.7 0.7 0.7" 
+        diffuse="0.1 0.9 0.1" 
+        specular="0.9 0.9 0.9 1"/>
+      </GameObject>
+      <!-- 右前方 -->
+     <GameObject name="cont_directionalLight3">
+        <Light name="directionalLight3" type="directional_light" position="3.41932 0 7.57644" direction="-0.867119 0.0142608 0.497897"
+         diffuse="0.7 0.7 0.7" 
+        specular="0.9 0.9 0.9 1"/>
+      </GameObject>
+      <!-- 上方 -->
+      <GameObject name="cont_directionalLight4">
+        <Light name="directionalLight4" type="directional_light" 
+        position="0 -100 0"
+        direction="0 -2 0" 
+        diffuse="0.2 0.2 0.2" 
+        specular="0.9 0.9 0.9 1"/>
+      </GameObject>
+        <!-- 下方 -->
+   <GameObject name="cont_directionalLight5">
+        <Light name="directionalLight5" type="directional_light" 
+        position="0 0 4.92222"
+        direction="0 2 0" 
+        diffuse="0.2 0.2 0.2" 
+        specular="0.9 0.9 0.9 1"/>
+      </GameObject>  
+
+    <GameObject name="waike" visible="true">
+     <Transform position="0 0 0" />
+      <GameObject name="teethRoot" visible="true">
+          <Transform position="0 2 0" />
+          <Transform eulerRotation="0 -65 0"/> 
+       <GameObject name="teeth2" visible="true">
+        <GameObject name="teeth3" visible="true">
+         <GameObject name="teeth4" visible="true">
+          <GameObject name="teeth" visible="true">
+          </GameObject> 
+         </GameObject> 
+        </GameObject> 
+      </GameObject> 
+     </GameObject> 
+    </GameObject> 
+
+    </Scene>
+   <JS src="main.js"/>
+  </Asset>
+</Assets>
